@@ -1,0 +1,52 @@
+/**
+This file is for general text styling. We're repeating styles here because we want to keep each
+block separate so that we can apply additional styles to each.
+ */
+
+body,
+#main {
+    p {
+        color: $black-color;
+        font-size: 2.0rem;
+        font-weight: 100;
+
+        @include media('<tablet') {
+            font-size: 1.8rem;
+        }
+    }
+
+    li {
+        color: $black-color;
+        font-size: 2.0rem;
+    }
+
+    h1 {
+        color: $black-color;
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    h2 {
+        color: $black-color;
+        font-size: 3.0rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    h3 {
+        font-size: 2.6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    a {
+        color: $blue-color;
+    }
+}

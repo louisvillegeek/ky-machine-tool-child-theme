@@ -1,0 +1,54 @@
+/**
+This file is for styling both the default Enfold breadcrumbs and the [bread_crumb] shortcode
+ */
+#main {
+    .title_container {
+        background-color: transparent;
+
+        .container {
+            .breadcrumb {
+                left: 5.0rem;
+
+                @include media('<tablet') {
+                    left: 0;
+                    width: 100%;
+                }
+
+                span {
+                    font-size: 1.8rem;
+                    font-weight: 100;
+                    color: $black-color;
+
+                    a {
+                        color: $black-color;
+                    }
+                }
+
+                .trail-before {
+                    display: none;
+                }
+
+                .sep {
+                    width: 1.3rem;
+                }
+            }
+        }
+    }
+    // This block is for styling our [bread_crumb], which is used on subpages w/o hero images
+    .avia_codeblock_section {
+        .breadcrumb {
+            font-size: 1.8rem;
+            left: 5.0rem;
+
+            @include media('<tablet') {
+                left: 0;
+                width: 100%;
+            }
+
+            a {
+                color: $black-color;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

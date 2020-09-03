@@ -1,0 +1,40 @@
+/*
+    This custom class adds styling and responsiveness to a hero image. We typically always use this on the home page
+    of a site. This class is built for a color section with the hero image set as a background image (stretch to fit),
+    and a single textblock with an H1 heading. Designed for a 1500 X 500 image, but should be easily adjustable.
+ */
+
+#lg-hero-image {
+    .container {
+        @include media('<tablet-large') {
+            height: 40rem !important;
+        }
+
+        @include media('<tablet') {
+            height: 25rem !important;
+        }
+    }
+
+    .content {
+        padding-bottom: 1.2rem;
+        vertical-align: bottom;
+    }
+
+    .avia_textblock {
+        h1 {
+            color: white;
+            line-height: 5rem;
+            text-transform: none;
+
+            @include media('<tablet-large') {
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+
+            @include media('<tablet') {
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+            }
+        }
+    }
+}

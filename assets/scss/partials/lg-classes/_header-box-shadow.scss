@@ -1,0 +1,7 @@
+/*
+This partial adds a box shadow to the header, import this into the bootstrapper if the design calls for this element
+ */
+
+#header {
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, .25);
+}

@@ -1,0 +1,31 @@
+/**
+This file is for styling the blog overview page.
+ */
+#top {
+    .fullsize {
+        .template-blog .post-entry {
+            .big-preview {
+                float: left;
+                width: 28%;
+            }
+
+            .blog-meta {
+                display: none !important;
+            }
+
+            .entry-content-wrapper {
+                float: right;
+                width: 68%;
+
+                .post-title {
+                    padding-top: 0;
+                    text-align: left;
+                }
+
+                .post-meta-infos {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

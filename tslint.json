@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "no-duplicate-variable": true,
+    "no-constant-condition": true,
+    "no-unused-variable": [
+      true
+    ],
+    "completed-docs": [
+      true
+    ]
+  },
+  "extends": [
+    "tslint-eslint-rules"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "dist/**/*",
+      "node_modules/**/*"
+    ]
+  }
+}

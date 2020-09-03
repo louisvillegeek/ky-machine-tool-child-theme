@@ -1,0 +1,25 @@
+/**
+This file is for adding layout and responsive styling to #header_main if needed, otherwise
+it simply bootstraps the navigation menu. This helps to eliminate some of the deep
+nesting that is needed to style the nav menu.
+ */
+#header_main {
+    .container {
+        .inner-container {
+            .logo {
+                max-width: 24.0rem;
+
+                @include media('<tablet') {
+                    max-width: 20rem;
+                }
+
+                a {
+                    align-items: center;
+                    display: flex;
+                }
+            }
+
+            @import "nav-menu";
+        }
+    }
+}

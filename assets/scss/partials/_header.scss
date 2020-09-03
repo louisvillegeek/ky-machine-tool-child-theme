@@ -1,0 +1,10 @@
+/**
+This file acts as a mini bootstrapper for our header partials and helps keep our files small and manageable.
+We can add styles for #header and .header_bg here and then import styles for #header_main and #header_meta below.
+ */
+body#top {
+    #header {
+        @import "header-partials/header-main";
+        @import "header-partials/header-meta";
+    }
+}

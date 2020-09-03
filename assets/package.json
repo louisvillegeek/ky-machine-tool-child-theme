@@ -1,0 +1,11 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "Cacheable vendor packages. Only the specified packages listed in the dependencies object will be copied over when packaging the theme",
+  "author": "Louisville Geek",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

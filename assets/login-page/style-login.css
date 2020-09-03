@@ -1,0 +1,77 @@
+#login {
+    width: 23vw !important;
+}
+
+
+#login h1 a,
+.login h1 a {
+    background-image: url(../img/lou-geek.png);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    background-position: left;
+}
+
+body {
+    background: white;
+    background-image: url(../img/background-image.svg);
+    background-repeat: repeat;
+    background-size: 12%;
+}
+
+body #loginform {
+    background: #cccccb;
+}
+
+body #loginform p label {
+    color: black;
+}
+
+body.wp-core-ui .button-primary:not(#correct-admin-email) {
+    background: #f5b938;
+    border-color: #f5b938#f5b938#f5b938;
+    box-shadow: 0 1px 0 #f5b938;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #f5b938, 1px 0 1px #f5b938, 0 1px 1px #f5b938, -1px 0 1px #f5b938;
+    font-size: 16px;
+}
+
+body.wp-core-ui .button-primary:hover {
+    background: rgba(245, 185, 56, .79);
+    border-color: #fad390;
+    color: #fff;
+}
+
+body.login a.loug-support {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.login a.loug-support {
+    color: white !important;
+}
+
+#login a:hover {
+    color: #ef3e3e !important;
+}
+
+body.login-action-login #login label {
+    font-size: 16px;
+}
+
+body.login-action-login #login #nav {
+    font-size: 16px;
+}
+
+body.login-action-login #login #backtoblog {
+    display: none;
+}

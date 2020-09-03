@@ -1,0 +1,11 @@
+/**
+This file is for home page styles. Most sites use a hero-image as the top of the page, so we start by hiding
+the breadcrumb container.
+ */
+body#top.home {
+    .title_container {
+        display: none; // Hides the enfold breadcrumbs
+    }
+
+    @import "../partials/lg-classes/lg-hero-image";
+}

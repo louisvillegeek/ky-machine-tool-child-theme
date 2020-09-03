@@ -1,0 +1,14 @@
+/**
+This file is for all #header_meta styles, for sites that use the secondary menu to
+display some additional info.
+ */
+#header_meta {
+    border: none;
+
+    .phone-info {
+        span {
+            font-size: 1.6rem;
+            font-weight: 100;
+        }
+    }
+}

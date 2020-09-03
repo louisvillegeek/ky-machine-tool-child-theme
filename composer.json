@@ -1,0 +1,29 @@
+{
+  "name": "louisville-geek/enfold-child",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Louisville Geek",
+      "email": "jasong@lougeek.com"
+    }
+  ],
+  "require": {
+    "squizlabs/php_codesniffer": "^2.8",
+    "objective-wp/framework": "0.1.4",
+    "vlucas/phpdotenv": "^2.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "LouisvilleGeek\\EnfoldChild\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "yarn install"
+    ]
+  },
+  "description": ""
+}

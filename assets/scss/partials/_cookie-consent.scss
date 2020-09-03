@@ -1,0 +1,11 @@
+/**
+This file is for styling the cookie consent banner which only appears until the first time
+you click OK. It's easy to forget about this banner. If you need to make style changes to it,
+you'll need to clear your cookies to bring it back.
+ */
+.avia-cookie-consent {
+    .avia_cookie_text {
+        color: white;
+        font-size: 1.6rem;
+    }
+}

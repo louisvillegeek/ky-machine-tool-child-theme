@@ -1,0 +1,38 @@
+/**
+This file is for styling up the footer. Most sites will only have a #socket. These base styles should
+take care of responsiveness for the copyright text and the social icons in the #socket.
+ */
+#socket {
+    background-color: $blue-color;
+
+    @include media('<850px') {
+        .container {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social_bookmarks {
+            margin: 0;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    }
+
+    .container {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .copyright {
+        color: $white-color;
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+
+    .social_bookmarks a {
+        color: $white-color;
+    }
+}

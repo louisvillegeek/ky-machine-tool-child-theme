@@ -1,0 +1,29 @@
+/**
+This file is for storing global variables that we can reuse throughout our styles.
+ */
+
+$blue-color: #3c5896;
+
+$white-color: white;
+
+$yellow-color: #f6c32a;
+
+$black-color: #333;
+
+$breakpoints: (
+    phone-small: 280px,
+    phone: 400px,
+    phone-wide: 480px,
+    phablet: 560px,
+    tablet-small: 640px,
+    tablet: 768px,
+    tablet-wide: 1135px,
+    tablet-medium: 990px,
+    tablet-large: 1085px,
+    desktop: 1248px,
+    desktop-wide: 1440px,
+    ipadPro: 1025px,
+    full-desktop: 2736px
+) !default;
+
+@import '../../node_modules/include-media/dist/include-media';

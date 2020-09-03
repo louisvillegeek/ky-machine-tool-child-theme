@@ -1,0 +1,24 @@
+/*This partial can be included in the bootstrapper if the design calls for the header meta to be more inline
+with the header itself. Adjust values as needed.
+ */
+
+#header_meta {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    min-height: 0;
+    height: 0;
+
+    @include media("<tablet") {
+        position: relative;
+        min-height: 3rem;
+        padding-bottom: 0;
+
+        .phone-info {
+            a {
+                white-space: nowrap;
+            }
+        }
+    }
+}

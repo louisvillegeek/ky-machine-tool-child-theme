@@ -1,0 +1,43 @@
+/**
+This file is for styling the navigation menu. It has been extracted to a partial to eliminate some of
+the excessive nesting that is necessary to target these elements.
+ */
+.main_menu {
+    #avia-menu {
+        > li {
+            > a {
+                .avia-menu-text {
+                    color: $black-color;
+                    font-size: 1.8rem;
+                    font-weight: 100;
+                }
+
+                .avia-menu-fx {
+                    background-color: $blue-color;
+                    bottom: 0;
+                }
+            }
+            // Drop down menu styles
+            .sub-menu {
+                > li {
+                    > a {
+                        .avia-menu-text {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // The block below will color the hamburger menu icons
+    .av-burger-menu-main {
+        .av-hamburger-inner {
+            background-color: $black-color;
+
+            &::before,
+            &::after {
+                background-color: $black-color;
+            }
+        }
+    }
+}
