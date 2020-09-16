@@ -4,6 +4,8 @@ We can add styles for #header and .header_bg here and then import styles for #he
  */
 body#top {
     #header {
+        position: absolute !important;
+
         @import "header-partials/header-main";
         @import "header-partials/header-meta";
     }

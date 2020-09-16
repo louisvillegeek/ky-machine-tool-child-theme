@@ -3,7 +3,7 @@ This file is for styling up the footer. Most sites will only have a #socket. The
 take care of responsiveness for the copyright text and the social icons in the #socket.
  */
 #socket {
-    background-color: $blue-color;
+    background-color: $black-color;
 
     @include media('<850px') {
         .container {

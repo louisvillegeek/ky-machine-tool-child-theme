@@ -4,22 +4,67 @@ it simply bootstraps the navigation menu. This helps to eliminate some of the de
 nesting that is needed to style the nav menu.
  */
 #header_main {
+    background: transparent;
+    border: none;
+
     .container {
+        line-height: 13rem !important;
+
+        @include media("<tablet") {
+            line-height: 8rem !important;
+        }
+
         .inner-container {
+            height: 13rem;
+            margin-top: 1rem;
+            border-bottom: .1rem solid #122567;
+
             .logo {
-                max-width: 24.0rem;
+                max-width: 40rem;
+                display: flex;
 
                 @include media('<tablet') {
                     max-width: 20rem;
+                    margin-top: 1.5rem;
                 }
 
                 a {
                     align-items: center;
                     display: flex;
                 }
+
+                &::after {
+                    content: "Machinists";
+                    position: initial;
+                    height: .6rem;
+                    margin-left: 1.5rem;
+                    font-size: 1.8rem;
+                    color: $white-color;
+                    font-family: "interstate", serif;
+                    text-transform: uppercase;
+                }
+            }
+
+            @include media("<tablet") {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            @include media('<=320px') {
+                height: 11rem;
+
+                .logo {
+                    max-width: 18rem;
+                }
             }
 
             @import "nav-menu";
         }
     }
+}
+
+.header_bg {
+    background: transparent;
+    border: none;
 }
