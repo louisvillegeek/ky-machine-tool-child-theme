@@ -19,32 +19,6 @@ nesting that is needed to style the nav menu.
             margin-top: 1rem;
             border-bottom: .1rem solid #122567;
 
-            .logo {
-                max-width: 40rem;
-                display: flex;
-
-                @include media('<tablet') {
-                    max-width: 20rem;
-                    margin-top: 1.5rem;
-                }
-
-                a {
-                    align-items: center;
-                    display: flex;
-                }
-
-                &::after {
-                    content: "Machinists";
-                    position: initial;
-                    height: .6rem;
-                    margin-left: 1.5rem;
-                    font-size: 1.8rem;
-                    color: $white-color;
-                    font-family: "interstate", serif;
-                    text-transform: uppercase;
-                }
-            }
-
             @include media("<tablet") {
                 align-items: center;
                 display: flex;
@@ -56,6 +30,32 @@ nesting that is needed to style the nav menu.
 
                 .logo {
                     max-width: 18rem;
+                }
+            }
+
+            .logo {
+                max-width: 40rem;
+                display: flex;
+
+                @include media('<tablet') {
+                    max-width: 21rem;
+                    margin-top: 1.5rem;
+                }
+
+                a {
+                    align-items: center;
+                    display: flex;
+
+
+                    &::after {
+                        content: "Machinists";
+                        position: initial;
+                        margin-left: 1.5rem;
+                        font-size: 1.8rem;
+                        color: $white-color;
+                        font-family: "interstate", serif;
+                        text-transform: uppercase;
+                    }
                 }
             }
 
