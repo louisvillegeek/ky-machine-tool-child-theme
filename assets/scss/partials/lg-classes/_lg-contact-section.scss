@@ -13,6 +13,10 @@
         }
 
         .lg-contact-form-section {
+            @include media("<932px") {
+                width: 100%;
+            }
+
             p,
             .gfield_label {
                 color: $white-color;
@@ -40,10 +44,6 @@
             .gform_confirmation_message_1 {
                 color: $white-color;
                 font-size: 1.8rem;
-            }
-
-            @include media("<932px") {
-                width: 100%;
             }
         }
 
