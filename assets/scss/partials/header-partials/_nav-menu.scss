@@ -3,13 +3,28 @@ This file is for styling the navigation menu. It has been extracted to a partial
 the excessive nesting that is necessary to target these elements.
  */
 .main_menu {
+    @include media("<tablet") {
+        top: -5.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        max-width: 15rem;
+    }
+
     #avia-menu {
         > li {
+            @include media("<tablet") {
+                display: block;
+            }
+
             > a {
+                line-height: 13rem;
+
                 .avia-menu-text {
-                    color: $black-color;
+                    color: $white-color;
                     font-size: 1.8rem;
-                    font-weight: 100;
+                    font-weight: 400;
                 }
 
                 .avia-menu-fx {
@@ -17,6 +32,7 @@ the excessive nesting that is necessary to target these elements.
                     bottom: 0;
                 }
             }
+
             // Drop down menu styles
             .sub-menu {
                 > li {
@@ -29,15 +45,11 @@ the excessive nesting that is necessary to target these elements.
             }
         }
     }
+
     // The block below will color the hamburger menu icons
     .av-burger-menu-main {
         .av-hamburger-inner {
-            background-color: $black-color;
-
-            &::before,
-            &::after {
-                background-color: $black-color;
-            }
+            display: none;
         }
     }
 }
